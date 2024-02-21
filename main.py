@@ -1,6 +1,7 @@
 import datetime
 import pytz
 
+
 def register():
     name = input("Введите ваше имя (без пробелов): ")
     while ' ' in name:
@@ -21,9 +22,6 @@ def register():
     with open("users.txt", "a") as file:
         file.write(f"{name} {login} {password}\n")
     print("Регистрация успешна!")
-
-
-
 
 def login():
     login = input("Введите логин: ")
